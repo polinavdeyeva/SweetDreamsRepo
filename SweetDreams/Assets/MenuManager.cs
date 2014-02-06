@@ -7,6 +7,7 @@ public class MenuManager : MonoBehaviour {
 	GameObject P2;
 	PlayerMove player1;
 	PlayerMove player2;
+	//this is another comment I'm inserting because ya know reasons
 
 	// Use this for initialization
 	void Start () {

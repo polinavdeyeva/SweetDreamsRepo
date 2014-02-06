@@ -21,8 +21,8 @@ public class GUIManger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		redHealth.text = "Blue Health: " + P1Script.health;
-		blueHealth.text = "Red Health: " + P2Script.health;
+		redHealth.text = "Red Health: " + P1Script.health;
+		blueHealth.text = "Blue Health: " + P2Script.health;
 
 		}
 }

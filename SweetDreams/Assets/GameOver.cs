@@ -20,7 +20,7 @@ public class GameOver : MonoBehaviour {
 	void Update () {
 		if (player1.health == 0 && player2.health == 0) {
 			Application.LoadLevel(4);
-			print("ded lol");
+			print("you're dead..");
 		}
 	
 	}
