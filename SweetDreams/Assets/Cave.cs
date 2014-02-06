@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//this is a comment
+using UnityEngine;
 using System.Collections;
 
 public class Cave : MonoBehaviour {
