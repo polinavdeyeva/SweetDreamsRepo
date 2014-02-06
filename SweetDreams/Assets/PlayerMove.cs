@@ -16,6 +16,7 @@ public class PlayerMove : MonoBehaviour {
 	float edgeOffset = 5.0f;
 	Animator animator;
 	public float defaulty;
+	//added a comment for testing
 
 	// Use this for initialization
 	void Start () {
