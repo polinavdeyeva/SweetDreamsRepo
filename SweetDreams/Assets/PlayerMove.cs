@@ -16,6 +16,8 @@ public class PlayerMove : MonoBehaviour {
 	float edgeOffset = 5.0f;
 	Animator animator;
 	public float defaulty;
+	public float facing;
+	Vector3 scaling = new Vector3(3f, 3f, 1f);
 	//added a comment for testing
 
 	// Use this for initialization
@@ -52,13 +54,18 @@ public class PlayerMove : MonoBehaviour {
 
 	public void calculateMovement(string horizontalAxis, string jumpButton){
 		HorizontalMovement = Input.GetAxis (horizontalAxis);
+
 		if (transform.localPosition.x < variableRight.x - edgeOffset && HorizontalMovement > 0) {
 			moveDirection.x = HorizontalMovement * Time.deltaTime * speed;
 			animator.SetBool("isWalking", true);
+			scaling.x = 3f;
+			transform.localScale = scaling;
 		}
 		else if(transform.localPosition.x > variableLeft.x + edgeOffset && HorizontalMovement < 0){
 			moveDirection.x = HorizontalMovement * Time.deltaTime * speed;
 			animator.SetBool("isWalking", true);
+			scaling.x = -3f;
+			transform.localScale = scaling;
 		}
 		else {
 			animator.SetBool("isWalking", false);
